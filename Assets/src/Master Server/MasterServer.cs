@@ -1,18 +1,10 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using System;
 
-public class MasterServer : MonoBehaviour
-{
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+namespace DOTSnet.MasterServer {
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+  /// <summary>
+  /// Master Server
+  /// </summary>
+  [AttributeUsage(System.AttributeTargets.Method)]
+  public class MasterServer : System.Attribute { }
 }
